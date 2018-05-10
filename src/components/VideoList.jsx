@@ -1,9 +1,9 @@
 var VideoList = (props) => {
   
-  return(
-  <div className="video-list">
-    {props.videos.map(video => <VideoListEntry video={video} changeVideoOnClick={props.changeVideoOnClick} />)}
-  </div>)
+  return (
+    <div className="video-list">
+      {props.videos.map(video => <VideoListEntry video={video} changeVideoOnClick={props.changeVideoOnClick} />)}
+    </div>);
 };
 
 // PropTypes tell other developers what `props` a component expects

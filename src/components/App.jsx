@@ -1,19 +1,19 @@
-class App extends React.Component{
+class App extends React.Component {
   constructor(props) {
     super(props);
     this.changeVideoOnClick = this.changeVideoOnClick.bind(this);
     this.state = {
       video: this.props.videos[0]
-    }
+    };
   }
   
-  changeVideoOnClick(video){
+  changeVideoOnClick(video) {
     this.setState({ video });
-  };
+  }
    
-  render(){ 
+  render() { 
   
-    return (  <div>
+    return ( <div>
       <nav className="navbar">
         <div className="col-md-6 offset-md-3">
           <div><h5><em>search</em> view goes here</h5></div>
