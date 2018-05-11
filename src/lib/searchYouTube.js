@@ -18,3 +18,4 @@ var searchYouTube = (options, callback) => {
 };
 
 window.searchYouTube = searchYouTube;
+window.debounceSearch = _.debounce(searchYouTube, 1000);

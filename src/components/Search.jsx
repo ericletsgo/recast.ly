@@ -5,10 +5,6 @@ class Search extends React.Component {
     this.state = {value: ''}  
   } 
   
-  // changeValue() {
-  //   this.props.handleClick(document.getElementById('#myinput').value)
-  // }
-  
   handleChange(value) {
     this.setState({value});
   }
@@ -16,7 +12,7 @@ class Search extends React.Component {
   render() {
     return (
       <div className="search-bar form-inline">
-        <input className="form-control" type="text" value={this.state.value} onChange={(e) => this.handleChange(e.target.value)}/>
+        <input className="form-control" type="text" value={this.state.value} onChange={(e) =>{this.handleChange(e.target.value);this.props.handleClick(this.state.value)}} />
         <button className="btn hidden-sm-down" onClick={() => this.props.handleClick(this.state.value)}>
           <span className="glyphicon glyphicon-search"></span>
         </button>

@@ -1,2 +1,2 @@
-ReactDOM.render(<App searchYouTube={searchYouTube} videos={[]}/>, document.getElementById("app"));
+ReactDOM.render(<App searchYouTube={searchYouTube} debounceSearch={debounceSearch}/>, document.getElementById("app"));
  
